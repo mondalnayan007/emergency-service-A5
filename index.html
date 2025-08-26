@@ -26,7 +26,7 @@
 <body>
 
 
-    <section class="nav-section px-[60px] py-[28px] font-inter">
+    <section class="nav-section px-[60px] py-[28px] font-inter bg-white sticky top-0">
 
         <div class="navbar flex items-center justify-between">
                 <div class="nav-left flex items-center justify-center gap-2">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="nav-right flex items-center justify-center gap-8">
                        <div class="heart flex items-center justify-center gap-2 bg-[#edfff1] text-lg px-8 py-[11px] rounded-full font-bold">
-                             <h1>0</h1>
+                             <h1 id="red-heart">0</h1>
                              <img class="h-[30px] w-[30px]" src="./assets/heart.png" alt="">
                        </div>
                        <div class="coin flex items-center justify-center gap-2 bg-[#edfff1] text-lg px-8 py-[11px] rounded-full font-bold">
@@ -72,20 +72,20 @@
                             <img class=" h-8 w-8" src="./assets/emergency.png" alt="">
                     </div>
                     
-                    <span><i class="fa-regular fa-heart text-2xl text-[#5C5C5C]"></i></span>
+                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C] cursor-pointer"></i>
                 </div>
                 <div class="titles mt-4">
                     <h1 class="title text-[24px] font-semibold hind-madurai">জাতীয় জরুরি সেবা</h1>
                     <h1 class="subtitle text-[18px] font-roboto font-light  text-[#5C5C5C] ">National Emergency</h1>
                 </div>
                 <div class="numbers my-6">
-                    <h1 class="number text-[32px] font-bold">999</h1>
+                    <h1 id="textToCopy" class="number text-[32px] font-bold">999</h1>
                     <div class="category-container px-5 py-2 inline-block  bg-[#f2f2f2] rounded-full">
                         <h1 class="category text-[18px] text-[#5C5C5C]">সার্বজনীন</h1>
                     </div>
                 </div>
                 <div class="buttons grid grid-cols-2 gap-3">
-                    <button class="border-1 border-[#5C5C5C] p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
+                    <button id="copyBtn" class="border-1 border-[#5C5C5C] p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
                         <i class="fa-regular fa-copy"></i>
                         <span>Copy</span>
                     </button>
@@ -101,7 +101,7 @@
                             <img class=" h-8 w-8" src="./assets/police.png" alt="">
                     </div>
                     
-                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C]"></i>
+                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C] cursor-pointer"></i>
                 </div>
                 <div class="titles mt-4">
                     <h1 class="title text-[24px] font-semibold hind-madurai">পুলিশ</h1>
@@ -130,7 +130,7 @@
                             <img class=" h-8 w-8" src="./assets/fire-service.png" alt="">
                     </div>
                     
-                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C]"></i>
+                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C] cursor-pointer"></i>
                 </div>
                 <div class="titles mt-4">
                     <h1 class="title text-[24px] font-semibold hind-madurai">ফায়ার সার্ভিস</h1>
@@ -178,7 +178,7 @@
                             <img class=" h-8 w-8" src="./assets/ambulance.png" alt="">
                     </div>
                     
-                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C]"></i>
+                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C] cursor-pointer"></i>
                 </div>
                 <div class="titles mt-4">
                     <h1 class="title text-[24px] font-semibold hind-madurai">অ্যাম্বুলেন্স</h1>
@@ -207,7 +207,7 @@
                             <img class=" h-8 w-8" src="./assets/emergency.png" alt="">
                     </div>
                     
-                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C]"></i>
+                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C] cursor-pointer"></i>
                 </div>
                 <div class="titles mt-4">
                     <h1 class="title text-[24px] font-semibold hind-madurai">নারী ও শিশু সহায়তা</h1>
@@ -236,7 +236,7 @@
                             <img class=" h-8 w-8" src="./assets/emergency.png" alt="">
                     </div>
                     
-                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C]"></i>
+                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C] cursor-pointer"></i>
                 </div>
                 <div class="titles mt-4">
                     <h1 class="title text-[24px] font-semibold hind-madurai">দুদক</h1>
@@ -265,7 +265,7 @@
                             <img class=" h-8 w-8" src="./assets/emergency.png" alt="">
                     </div>
                     
-                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C]"></i>
+                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C] cursor-pointer"></i>
                 </div>
                 <div class="titles mt-4">
                     <h1 class="title text-[24px] font-semibold hind-madurai">বিদ্যুৎ বিভ্রাট</h1>
@@ -294,7 +294,7 @@
                             <img class=" h-8 w-8" src="./assets/brac.png" alt="">
                     </div>
                     
-                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C]"></i>
+                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C] cursor-pointer"></i>
                 </div>
                 <div class="titles mt-4">
                     <h1 class="title text-[24px] font-semibold hind-madurai">ব্র্যাক</h1>
@@ -323,7 +323,7 @@
                             <img class=" h-8 w-8" src="./assets/Bangladesh-Railway.png" alt="">
                     </div>
                     
-                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C]"></i>
+                    <i class="fa-regular fa-heart text-2xl text-[#5C5C5C] cursor-pointer"></i>
                 </div>
                 <div class="titles mt-4">
                     <h1 class="title text-[24px] font-semibold hind-madurai">বাংলাদেশ রেলওয়ে</h1>
@@ -354,6 +354,6 @@
 
 
     </section>
-    
+   <script src="script.js"></script> 
 </body>
 </html>
