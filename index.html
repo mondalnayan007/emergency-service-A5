@@ -39,7 +39,7 @@
                              <img class="h-3 w-3 sm:h-[30px] sm:w-[30px]" src="./assets/heart.png" alt="">
                        </div>
                        <div class="coin flex items-center justify-center gap-2 bg-[#edfff1] text-xs  sm:text-lg px-5 sm:px-8 py-[11px] rounded-full font-bold">
-                            <h1>100</h1>
+                            <h1 id="coin">100</h1>
                             <img class="h-3 w-3 sm:h-[30px] sm:w-[30px]" src="./assets/coin.png" alt="">
                        </div>
                        <div class="copy  bg-[#00a63d] text-white text-xs  sm:text-lg px-5 sm:px-8 py-[11px] rounded-full font-bold">
@@ -63,12 +63,12 @@
 
 
 
-    <section class="card-section bg-[#f5fff6] px-[40px] sm:px-[60px] pt-[48px]">
+<section class="card-section bg-[#f5fff6] px-[40px] sm:px-[60px] pt-[48px]">
 
-        <div class="card-container grid grid-cols-1 sm:grid-cols-4 gap-y-3 sm:gap-4">
+    <div class="card-container grid grid-cols-1 sm:grid-cols-4 gap-y-3 sm:gap-4">
 
-            <div class="cards grid grid-cols-1 sm:grid-cols-3 col-span-3 gap-4 sm:gap-x-8 sm:gap-y-4">
-                                          <div class="emergency bg-white p-8 shadow-lg rounded-xl">
+        <div class="cards grid grid-cols-1 sm:grid-cols-3 col-span-3 gap-4 sm:gap-x-8 sm:gap-y-4">
+             <div id="emergency" class="emergency bg-white p-8 shadow-lg rounded-xl">
                 <div class="icons flex items-center justify-between">
                     <div class="img p-[18px] bg-[#ffe4e3] rounded-lg flex items-center justify-center">
                             <img class=" h-8 w-8" src="./assets/emergency.png" alt="">
@@ -76,7 +76,7 @@
                     
                     <i class="fa-regular fa-heart text-2xl text-[#5C5C5C] cursor-pointer"></i>
                 </div>
-                <div class="titles mt-4">
+                <div  class="titles mt-4">
                     <h1 class="title text-[24px] font-semibold hind-madurai">জাতীয় জরুরি সেবা</h1>
                     <h1 class="subtitle text-[18px] font-roboto font-light  text-[#5C5C5C] ">National Emergency</h1>
                 </div>
@@ -91,7 +91,7 @@
                         <i class="fa-regular fa-copy"></i>
                         <span>Copy</span>
                     </button>
-                    <button class="border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
+                    <button class="call border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
                         <i class="fa-solid fa-phone"></i>
                         <span>Call</span>
                     </button>
@@ -120,13 +120,13 @@
                         <i class="fa-regular fa-copy"></i>
                         <span>Copy</span>
                     </button>
-                    <button class="border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
+                    <button class="call border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
                         <i class="fa-solid fa-phone"></i>
                         <span>Call</span>
                     </button>
                 </div>
             </div>
-            <div class="fire bg-white p-8 shadow-lg rounded-xl">
+            <div class="emergency bg-white p-8 shadow-lg rounded-xl">
                 <div class="icons flex items-center justify-between">
                     <div class="img p-[18px] bg-[#ffe4e3] rounded-lg flex items-center justify-center">
                             <img class=" h-8 w-8" src="./assets/fire-service.png" alt="">
@@ -149,7 +149,7 @@
                         <i class="fa-regular fa-copy"></i>
                         <span>Copy</span>
                     </button>
-                    <button class="border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
+                    <button class="call border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
                         <i class="fa-solid fa-phone"></i>
                         <span>Call</span>
                     </button>
@@ -158,7 +158,7 @@
 
 
 
-            <div class="ambulance bg-white p-8 shadow-lg rounded-xl">
+            <div class="emergency bg-white p-8 shadow-lg rounded-xl">
                 <div class="icons flex items-center justify-between">
                     <div class="img p-[18px] bg-[#ffe4e3] rounded-lg flex items-center justify-center">
                             <img class=" h-8 w-8" src="./assets/ambulance.png" alt="">
@@ -181,13 +181,13 @@
                         <i class="fa-regular fa-copy"></i>
                         <span>Copy</span>
                     </button>
-                    <button class="border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
+                    <button class="call border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
                         <i class="fa-solid fa-phone"></i>
                         <span>Call</span>
                     </button>
                 </div>
             </div>
-            <div class="women bg-white p-8 shadow-lg rounded-xl">
+            <div class="emergency bg-white p-8 shadow-lg rounded-xl">
                 <div class="icons flex items-center justify-between">
                     <div class="img p-[18px] bg-[#ffe4e3] rounded-lg flex items-center justify-center">
                             <img class=" h-8 w-8" src="./assets/emergency.png" alt="">
@@ -210,13 +210,13 @@
                         <i class="fa-regular fa-copy"></i>
                         <span>Copy</span>
                     </button>
-                    <button class="border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
+                    <button class="call border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
                         <i class="fa-solid fa-phone"></i>
                         <span>Call</span>
                     </button>
                 </div>
             </div>
-            <div class="dudok bg-white p-8 shadow-lg rounded-xl">
+            <div class="emergency bg-white p-8 shadow-lg rounded-xl">
                 <div class="icons flex items-center justify-between">
                     <div class="img p-[18px] bg-[#ffe4e3] rounded-lg flex items-center justify-center">
                             <img class=" h-8 w-8" src="./assets/emergency.png" alt="">
@@ -239,13 +239,13 @@
                         <i class="fa-regular fa-copy"></i>
                         <span>Copy</span>
                     </button>
-                    <button class="border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
+                    <button class="call border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
                         <i class="fa-solid fa-phone"></i>
                         <span>Call</span>
                     </button>
                 </div>
             </div>
-            <div class="electricity bg-white p-8 shadow-lg rounded-xl">
+            <div class="emergency bg-white p-8 shadow-lg rounded-xl">
                 <div class="icons flex items-center justify-between">
                     <div class="img p-[18px] bg-[#ffe4e3] rounded-lg flex items-center justify-center">
                             <img class=" h-8 w-8" src="./assets/emergency.png" alt="">
@@ -268,13 +268,13 @@
                         <i class="fa-regular fa-copy"></i>
                         <span>Copy</span>
                     </button>
-                    <button class="border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
+                    <button class="call border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
                         <i class="fa-solid fa-phone"></i>
                         <span>Call</span>
                     </button>
                 </div>
             </div>
-            <div class="brac bg-white p-8 shadow-lg rounded-xl">
+            <div class="emergency bg-white p-8 shadow-lg rounded-xl">
                 <div class="icons flex items-center justify-between">
                     <div class="img p-[18px] bg-[#ffe4e3] rounded-lg flex items-center justify-center">
                             <img class=" h-8 w-8" src="./assets/brac.png" alt="">
@@ -297,13 +297,13 @@
                         <i class="fa-regular fa-copy"></i>
                         <span>Copy</span>
                     </button>
-                    <button class="border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
+                    <button class="call border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
                         <i class="fa-solid fa-phone"></i>
                         <span>Call</span>
                     </button>
                 </div>
             </div>
-            <div class="railway bg-white p-8 shadow-lg rounded-xl">
+            <div class="emergency bg-white p-8 shadow-lg rounded-xl">
                 <div class="icons flex items-center justify-between">
                     <div class="img p-[18px] bg-[#ffe4e3] rounded-lg flex items-center justify-center">
                             <img class=" h-8 w-8" src="./assets/Bangladesh-Railway.png" alt="">
@@ -326,7 +326,7 @@
                         <i class="fa-regular fa-copy"></i>
                         <span>Copy</span>
                     </button>
-                    <button class="border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
+                    <button class="call border-none bg-[#00a63d] text-white p-4 flex items-center justify-center gap-2 rounded-lg text-[16px] font-roboto">
                         <i class="fa-solid fa-phone"></i>
                         <span>Call</span>
                     </button>
