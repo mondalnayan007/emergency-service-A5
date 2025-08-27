@@ -26,23 +26,23 @@
 <body>
 
 
-    <section class="nav-section px-[60px] py-[28px] font-inter bg-white sticky top-0">
+    <section class="nav-section px-[40px] sm:px-[60px] py-[14px] sm:py-[28px] font-inter bg-white sticky top-0">
 
-        <div class="navbar flex items-center justify-between">
+        <div class="navbar flex items-center justify-between gap-8">
                 <div class="nav-left flex items-center justify-center gap-2">
-                       <img class="h-[50px] w-[50px]"  src="./assets/logo.png" alt="">
-                       <h1 class="text-[#006747] font-extrabold text-xl">Emergency <br> Service</h1>
+                       <img class="h-8  w-8 sm:h-[50px] sm:w-[50px]"  src="./assets/logo.png" alt="">
+                       <h1 class="text-[#006747] font-extrabold text-sm sm:text-xl  ">Emergency <br> Service</h1>
                 </div>
-                <div class="nav-right flex items-center justify-center gap-8">
-                       <div class="heart flex items-center justify-center gap-2 bg-[#edfff1] text-lg px-8 py-[11px] rounded-full font-bold">
+                <div class="nav-right flex items-center justify-center gap-3 sm:gap-8">
+                       <div class="heart flex items-center justify-center gap-2 bg-[#edfff1] text-xs  sm:text-lg px-5 sm:px-8 py-[11px] rounded-full font-bold">
                              <h1 id="red-heart">0</h1>
-                             <img class="h-[30px] w-[30px]" src="./assets/heart.png" alt="">
+                             <img class="h-3 w-3 sm:h-[30px] sm:w-[30px]" src="./assets/heart.png" alt="">
                        </div>
-                       <div class="coin flex items-center justify-center gap-2 bg-[#edfff1] text-lg px-8 py-[11px] rounded-full font-bold">
+                       <div class="coin flex items-center justify-center gap-2 bg-[#edfff1] text-xs  sm:text-lg px-5 sm:px-8 py-[11px] rounded-full font-bold">
                             <h1>100</h1>
-                            <img class="h-[30px] w-[30px]" src="./assets/coin.png" alt="">
+                            <img class="h-3 w-3 sm:h-[30px] sm:w-[30px]" src="./assets/coin.png" alt="">
                        </div>
-                       <div class="copy  bg-[#00a63d] text-white text-lg px-8 py-[11px] rounded-full font-bold">
+                       <div class="copy  bg-[#00a63d] text-white text-xs  sm:text-lg px-5 sm:px-8 py-[11px] rounded-full font-bold">
                         <h1><span class="mr-2">0</span>Copy</h1>
 
                        </div>
@@ -52,11 +52,12 @@
     </section>
 
 
-    <section class="banner-section flex items-center justify-center py-[21px] px-[60px] bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)]">
+    <section class="banner-section flex items-center justify-center text-center py-[21px] px-[60px] bg-[linear-gradient(90deg,rgba(1,49,35,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)]">
+
             <div class="banner-container flex flex-col items-center justify-center hind-madurai">
                   <img class="h-[92px] w-[92px]" src="./assets/logo-dark.png" alt="">
-                  <h1 class="banner-title text-[40px] font-semibold  text-white my-[11px]">জরুরি সেবা ডিরেক্টরি</h1>
-                  <p class="banner-description text-white text-[20px] font-semibold ">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+                  <h1 class="banner-title text-[28px] sm:text-[40px] font-semibold  text-white my-[11px]">জরুরি সেবা ডিরেক্টরি</h1>
+                  <p class="banner-description text-white text-[10px] sm:text-[20px] font-semibold ">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
             </div>
     </section>
 
@@ -64,9 +65,10 @@
 
     <section class="card-section bg-[#f5fff6] px-[60px] pt-[48px]">
 
-        <div class="card-container grid grid-cols-4 gap-x-8 gap-y-4">
+        <div class="card-container grid grid-cols-1 sm:grid-cols-4  gap-4">
 
-            <div class="emergency bg-white p-8 shadow-lg rounded-xl">
+            <div class="cards grid grid-cols-1 sm:grid-cols-3 col-span-3 gap-x-8 gap-y-4">
+                                          <div class="emergency bg-white p-8 shadow-lg rounded-xl">
                 <div class="icons flex items-center justify-between">
                     <div class="img p-[18px] bg-[#ffe4e3] rounded-lg flex items-center justify-center">
                             <img class=" h-8 w-8" src="./assets/emergency.png" alt="">
@@ -154,23 +156,7 @@
                 </div>
             </div>
 
-         <!-- Call history section start -->
-      
-            
-            <div class="details row-span-3 bg-white rounded-xl shadow-xl p-[36px]">
-                <div class="heading flex items-center justify-between">
-                      <div class="heading-left flex items-center justify-center gap-3">
-                              <span><i class="fa-regular fa-clock text-2xl"></i></span>
-                              <h1 class="text-[24px] font-medium font-roboto">Call History</h1>
-                      </div>
-                      <div class="heading-right">
-                            <button class="px-[30px] py-[16px] bg-[#00a63d] text-white text-xl font-semibold font-roboto rounded-full border-none">Clear</button>
-                      </div>
-                </div>
 
-            </div>
-
-               <!-- Call history section end -->
 
             <div class="ambulance bg-white p-8 shadow-lg rounded-xl">
                 <div class="icons flex items-center justify-between">
@@ -346,6 +332,26 @@
                     </button>
                 </div>
             </div>
+                        </div>
+
+
+                     <!-- Call history section start -->
+      
+            
+            <div class="details row-span-3 bg-white rounded-xl shadow-xl p-[36px]">
+                <div class="heading flex items-center justify-between">
+                      <div class="heading-left flex items-center justify-center gap-3">
+                              <span><i class="fa-regular fa-clock text-2xl"></i></span>
+                              <h1 class="text-[24px] font-medium font-roboto">Call History</h1>
+                      </div>
+                      <div class="heading-right">
+                            <button class="px-[30px] py-[16px] bg-[#00a63d] text-white text-xl font-semibold font-roboto rounded-full border-none">Clear</button>
+                      </div>
+                </div>
+
+            </div>
+
+               <!-- Call history section end -->
 
 
         </div>
