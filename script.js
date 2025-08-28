@@ -95,10 +95,10 @@ for (let i=0; i<btn.length ; i++) {
 
     const copyBtns = document.getElementsByClassName('copyBtn');
 
-for(let i=0; i<=copyBtns.length; i++){
+for(let i=0; i<copyBtns.length; i++){
       
       
-    copyBtns[i].addEventListener('click',function(){
+    copyBtns[i].addEventListener('click', function(){
        
         let copyNumbers = Number(document.getElementById('copy-numbers').innerText)
         
